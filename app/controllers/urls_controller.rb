@@ -11,7 +11,7 @@ class UrlsController < ApplicationController
   # GET /urls/1.json
   def show
     @url = Url.find(params[:id])
-    redirect_to @url.original
+    redirect_to "#{@url.original}"
   end
 
   # GET /urls/new
